@@ -115,27 +115,34 @@ label {
   border-radius: 30px;
 }
 
-button:hover {
+.mod:hover {
   margin-top: 15px;
   /* border: 1px solid rgb(224, 46, 46); */
   color: rgb(48 89 122);
   
 }
 
+.back:hover {
+  margin-left: 15px;
+  border: 1px solid rgb(224, 46, 46);
+}
+
 .back {
-     width: 95px;
-    margin: 10px;
-    position: relative;
-    top: 16px;
-    left: 43px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 10px;
+  position: absolute;
+  top: 545px;
+  left: 79px;
 }
 
 .mod {
   width: 165px;
   margin: 10px;
-  position: absolute;
-  top: 1118px;
-  left: 224px;
+  position: relative;
+  top: 9px;
+  left: 115px;
 }
  /* h2{
     z-index: 2;
@@ -347,7 +354,7 @@ button:hover {
 } */
 .modal {
   position: fixed;
-  top: 23%;
+  top: 16%;
   left: 0;
   z-index: 1055;
   display: none;
@@ -390,36 +397,44 @@ button:hover {
       position: absolute;
       right: 5%;
   }
-@media screen and (max-width: 400px) {
-  #g{
-  display: none;
-  }
-  #center{
-    width: 90%;
-    left: 5%;
-      }
-      #scroll{
-        /* right: auto; */
-        width: 100%;
-      }
-      h2{
-        left: 16%;
-      }
+/* @media screen and (max-width: 400px) {
+ 
     
+} */
+@media screen and (max-width: 1125px) {
+  form {
+    transform: translate(-50%,-50%);
+  }
 }
-@media screen and (max-width: 700px) {
-  #g{
-  display: none;
+
+@media screen and (max-width: 900px) {
+  #gif {
+    display: none;
   }
-  #center{
-width: 90%;
-left: 5%;
+  .back {
+    top: 548px;
+    left: 2px;
   }
-  #scroll{
-    /* right: auto; */
-    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 410px;
   }
-  h2{
-    left: 16%;
+  .back {
+    top: 685px;
   }
+  .mod {
+    left: 80px;
+  }
+  .modal {
+    width: 90%;
+    margin-left: 23px;
+  }
+  /* body {
+    background-image: url(../Css/img/data-service-heart.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  } */
 }
